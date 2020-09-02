@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="user-actions c-s">
+                <div class="user c-s">
+                    <div class="user-icon c-c">
+                        AE
+                    </div>
+                </div>
+                <div class="adv-setings">
+                    <div class="app-menu-icon c-c" onclick="">
+                        <i class="icon-menu"></i>
+                    </div>
+                    <div class="as-container">
+                        <div class="as-outer">
+                            <div class="as-inner active-menu">
+                                <div class="as-element">
+                                    <div class="as-user c-s">
+                                        <div class="user c-s">
+                                            <div class="user-icon c-c">
+                                                AE
+                                            </div>
+                                        </div>
+                                        <div class="as-user-info">
+                                            <div class="as-user-name">
+                                                Antonov Evgeniy
+                                            </div>
+                                            <div class="as-user-role">
+                                                e.ant@aircargomarket.com
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="as-element">
+                                    <ul class="as-menu">
+                                        <li class="as-menu-el next-menu" data-next="as-language">
+                                            <a href="#" class="as-menu-link">
+                                                <div class="as-menu-icon"><i class="icon-language-icon-1"></i></div>
+                                                <div class="as-menu-link-name">Language</div>
+                                                <div class="next-menu-icon">
+                                                    <i class="icon-chevron-right"></i>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="as-menu-el">
+                                            <a href="#" class="as-menu-link">
+                                                <div class="as-menu-icon"><i class="icon-settings"></i></div>
+                                                <div class="as-menu-link-name">Settings</div>
+                                            </a>
+                                        </li>
+                                        <li class="as-menu-el log-out">
+                                            <a href="#" class="as-menu-link">
+                                                <div class="as-menu-icon"><i class="icon-log-out"></i></div>
+                                                <div class="as-menu-link-name">Sign out</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="as-hiden" data-menu="as-language">
+                                <div class="as-language-inner">
+                                    <div class="back-to-menu-header">
+                                        <div class="back-to-menu">
+                                            <div class="back-menu-icon"><i class="icon-chevron-right"></i></div>
+                                        </div>
+                                        <h4 class="back-to-menu-title">Change lang</h4>
+                                    </div>
+                                    <div class="as-language-el as-language-selected" onclick="this.classList.toggle('as-language-selected')">
+                                        <div class="as-language-icon"><img src="./img/ru-lang-icon.svg" alt=""></div>
+                                        <div class="as-language-name">Russian</div>
+                                        <div class="as-language-select">
+                                            <div class="as-language-select-idicator"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="as-language-el" onclick="this.classList.toggle('as-language-selected')">
+                                        <div class="as-language-icon">
+                                            <img src="./img/eng-lang-icon.svg" alt="">
+                                        </div>
+                                        <div class="as-language-name">English</div>
+                                        <div class="as-language-select">
+                                            <div class="as-language-select-idicator"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="nav-outer">
+            <a href="#" class="nav-logo c-c" data-tooltip="Cargobooking365 Publick Website" data-tooltip-location="right">
+                <img src="./img/logo.svg" alt="">
+            </a>
+            <nav class="nav">
+                <div class="nav-inner">
+                    <ul class="nav-list c-c">
+                        <li class="nav-item">
+                            <a href="#" class="icon-s c-c" data-tooltip="Home page" data-tooltip-location="right"><span class="icon-dashboard" role="img" aria-label="dasboard icon"></span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="icon-s c-c active" onclick="this.classList.toggle('active')" data-tooltip="Search and book your cargo shipping" data-tooltip-location="right"><span class="icon-airplane" role="img" aria-label="airplane icon"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="icon-s c-c" data-tooltip="My companie's" data-tooltip-location="right"><span class="icon-box" role="img" aria-label="box icon"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="icon-s c-c" onclick="this.classList.toggle('active')" data-tooltip="My bookings" data-tooltip-location="right"><span class="icon-send" role="img" aria-label="send icon" ></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="icon-s c-c" data-tooltip="Admin panel" data-tooltip-location="right"><span class="icon-admin-panel" role="img" aria-label="admin-panel icon"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section class="cargo-search">
+        <div class="container-full">
+            <div class="row c-c">
+                <div class="ms-12 pcl-8">
+                    <div class="search-header">
+                        <h1 class="h1-page">Find your cargo way</h1>
+                        <div class="search-header-descr c-s">
+                            <p class="search-header-descr">Search the routes and сalculate the cost or </p>
+                            <a href="#" class="imaged-link action-link c-s">send the request right away <div class="icon-s c-c"><i class="icon-arrow-right"></i></div></a></div>
+                        <div class="search-line c-s">
+                            <div id="point-from" class="point-peaker">
+                                <div class="input-wrapper">
+                                    <label>
+										<span class="custom-label">Departure point</span>
+									<input placeholder="Departure point" type="text" class="form-input-large" autocomplete="off" aria-required="true" aria-invalid="false">
+										<div class="airpot-code"></div>
+										</label>
+                                    <div class="airports-list">
+                                        <div class="airports-list-inner">
+                                            <div class="airports-elements c-s">
+                                                <div class="airport-el loading">
+                                                    <div class="airport-el-inner c-s">
+                                                        <div class="airport-icon c-c">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                        <div class="airport-name">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                        <div class="airport-code">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="airport-el loading">
+                                                    <div class="airport-el-inner c-s">
+                                                        <div class="airport-icon c-c">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                        <div class="airport-name">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                        <div class="airport-code">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="airport-el loading">
+                                                    <div class="airport-el-inner c-s">
+                                                        <div class="airport-icon c-c">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                        <div class="airport-name">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                        <div class="airport-code">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="airport-el loading">
+                                                    <div class="airport-el-inner c-s">
+                                                        <div class="airport-icon c-c">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                        <div class="airport-name">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                        <div class="airport-code">
+                                                            <div class="placeholder-load"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swap-points-outer">
+                                <button class="swap-points">
+													<div class="swap-points-icon c-c">
+													<i class="icon-arrow-long"></i>
+													<i class="icon-arrow-long"></i>
+												</div>
+												</button>
+                            </div>
+                            <div id="point-to" class="point-peaker">
+                                <div class="input-wrapper">
+                                    <label>
+									<span class="custom-label">Destination</span>
+									<input placeholder="Destination" type="text" class="form-input-large" autocomplete="off" aria-required="true" aria-invalid="false">
+									<div class="airpot-code"></div>
+									<datalist >
+										<option value="A">  
+										<option value="B">
+									</datalist> 
+									</label>
+                                </div>
+                            </div>
+
+                            <div class="time-select-outer">
+                                <div class="time-select">
+                                    <div class="input-wrapper">
+                                        <input id="date" type="date" value="2020-09-01">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-statistics c-s">
+                            <div class="stat-el">
+                                <div class="stat-el-total">256</div>
+                                <div class="stat-el-descr">Countries</div>
+                            </div>
+                            <div class="stat-el">
+                                <div class="stat-el-total">2453</div>
+                                <div class="stat-el-descr">Airports</div>
+                            </div>
+                            <div class="stat-el">
+                                <div class="stat-el-total">20+</div>
+                                <div class="stat-el-descr">Air carriers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
