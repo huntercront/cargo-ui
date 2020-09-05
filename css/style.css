@@ -19,6 +19,7 @@ body {
     --shadow-bace: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
     --shadow-medium: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     --shadow-large: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    --icon-l: 1.2rem;
 }
 
 .sidebar {
@@ -175,6 +176,10 @@ body {
 
 
 /* input-large	 */
+
+.input-wrapper {
+    position: relative;
+}
 
 .input-wrapper input {
     padding: 0.75rem 1rem;
@@ -1039,4 +1044,40 @@ body {
 
 .action-link:hover:after {
     opacity: 1;
+}
+
+
+/* data-peaker */
+
+.time-select {
+    position: relative;
+}
+
+.time-select .icon-calendar {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: var(--icon-l);
+}
+
+.date-input-native {
+    display: none;
+}
+
+#picker {
+    position: absolute;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(0, 10px);
+    transition: var(--trainsition-fast) ease-in;
+    transition-property: visibility, transform, opacity;
+    box-shadow: var(--shadow-bace);
+}
+
+#picker.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
 }
