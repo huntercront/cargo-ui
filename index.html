@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/picker.css">
+    <link rel="stylesheet" href="./css/dropdown.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
@@ -134,136 +135,379 @@
             </nav>
         </div>
     </div>
-    <section class="cargo-search">
-        <div class="container-full">
-            <div class="row c-c">
-                <div class="ms-12 pcl-8">
-                    <div class="search-header">
-                        <h1 class="h1-page">Find your cargo way</h1>
-                        <div class="search-header-descr c-s">
-                            <p class="search-header-descr">Search the routes and сalculate the cost or </p>
-                            <a href="#" class="imaged-link action-link c-s">send the request right away <div class="icon-s c-c"><i class="icon-arrow-right"></i></div></a></div>
-                        <div class="search-line c-s">
-                            <div id="point-from" class="point-peaker">
-                                <div class="input-wrapper">
-                                    <label>
+    <div class="dashboard">
+        <section class="cargo-search">
+            <div class="container-full">
+                <div class="row c-c">
+                    <div class="ms-12 pcl-10 pc4k-9 pcs-11">
+                        <div class="search-header">
+                            <h1 class="h1-page">Find your cargo way</h1>
+                            <div class="search-header-descr c-s">
+                                <p class="search-header-descr">Search the routes and сalculate the cost or </p>
+                                <a href="#" class="imaged-link action-link c-s">send the request right away <div class="icon-s c-c"><i class="icon-arrow-right"></i></div></a></div>
+                            <div class="search-line c-s">
+                                <div id="point-from" class="point-peaker">
+                                    <div class="input-wrapper">
+                                        <label>
 										<span class="custom-label">Departure point</span>
 									<input placeholder="Departure point" type="text" class="form-input-large" autocomplete="off" aria-required="true" aria-invalid="false">
 										<div class="airpot-code"></div>
 										</label>
-                                    <div class="airports-list">
-                                        <div class="airports-list-inner">
-                                            <div class="airports-elements c-s">
-                                                <div class="airport-el loading">
-                                                    <div class="airport-el-inner c-s">
-                                                        <div class="airport-icon c-c">
-                                                            <div class="placeholder-load"></div>
-                                                        </div>
-                                                        <div class="airport-name">
-                                                            <div class="placeholder-load"></div>
-                                                        </div>
-                                                        <div class="airport-code">
-                                                            <div class="placeholder-load"></div>
+                                        <div class="airports-list">
+                                            <div class="airports-list-inner">
+                                                <div class="airports-elements c-s">
+                                                    <div class="airport-el loading">
+                                                        <div class="airport-el-inner c-s">
+                                                            <div class="airport-icon c-c">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
+                                                            <div class="airport-name">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
+                                                            <div class="airport-code">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="airport-el loading">
-                                                    <div class="airport-el-inner c-s">
-                                                        <div class="airport-icon c-c">
-                                                            <div class="placeholder-load"></div>
-                                                        </div>
-                                                        <div class="airport-name">
-                                                            <div class="placeholder-load"></div>
-                                                        </div>
-                                                        <div class="airport-code">
-                                                            <div class="placeholder-load"></div>
+                                                    <div class="airport-el loading">
+                                                        <div class="airport-el-inner c-s">
+                                                            <div class="airport-icon c-c">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
+                                                            <div class="airport-name">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
+                                                            <div class="airport-code">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="airport-el loading">
-                                                    <div class="airport-el-inner c-s">
-                                                        <div class="airport-icon c-c">
-                                                            <div class="placeholder-load"></div>
-                                                        </div>
-                                                        <div class="airport-name">
-                                                            <div class="placeholder-load"></div>
-                                                        </div>
-                                                        <div class="airport-code">
-                                                            <div class="placeholder-load"></div>
+                                                    <div class="airport-el loading">
+                                                        <div class="airport-el-inner c-s">
+                                                            <div class="airport-icon c-c">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
+                                                            <div class="airport-name">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
+                                                            <div class="airport-code">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="airport-el loading">
-                                                    <div class="airport-el-inner c-s">
-                                                        <div class="airport-icon c-c">
-                                                            <div class="placeholder-load"></div>
-                                                        </div>
-                                                        <div class="airport-name">
-                                                            <div class="placeholder-load"></div>
-                                                        </div>
-                                                        <div class="airport-code">
-                                                            <div class="placeholder-load"></div>
+                                                    <div class="airport-el loading">
+                                                        <div class="airport-el-inner c-s">
+                                                            <div class="airport-icon c-c">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
+                                                            <div class="airport-name">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
+                                                            <div class="airport-code">
+                                                                <div class="placeholder-load"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swap-points-outer">
+                                    <button class="swap-points">
+													<div class="swap-points-icon c-c">
+													<i class="icon-arrow-long"></i>
+													<i class="icon-arrow-long"></i>
+												</div>
+												</button>
+                                </div>
+                                <div id="point-to" class="point-peaker">
+                                    <div class="input-wrapper">
+                                        <label>
+									<span class="custom-label">Destination</span>
+									<input placeholder="Destination" type="text" class="form-input-large" autocomplete="off" aria-required="true" aria-invalid="false">
+									<div class="airpot-code"></div>
+									</label>
+                                    </div>
+                                </div>
+
+                                <div class="time-select-outer">
+                                    <div class="time-select">
+                                        <div class="input-wrapper">
+                                            <input class="date-input-native" id="date" type="date" name="date" min="2020-09-05" max="2021-02-11">
+                                            <label>
+                                            <input class="date-input-fallback" id="alt" type="text" placeholder="Pick A Date">
+																						<i class="icon-calendar"></i>
+																					</label>
+                                            <div id="picker"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="near-by c-s">
+                                <div class="toggle-wrapper">
+                                    <input class="tgl" id="cb2" type="checkbox">
+                                    <label class="tgl-btn" for="cb2">
+																	<div class="tgl-label-text">Airports near by</div>
+																</label>
+                                </div>
+                            </div>
+                            <div class="search-statistics c-s">
+                                <div class="stat-el">
+                                    <div class="stat-el-total">256</div>
+                                    <div class="stat-el-descr">Countries</div>
+                                </div>
+                                <div class="stat-el">
+                                    <div class="stat-el-total">2453</div>
+                                    <div class="stat-el-descr">Airports</div>
+                                </div>
+                                <div class="stat-el">
+                                    <div class="stat-el-total">20+</div>
+                                    <div class="stat-el-descr">Air carriers</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <div class="cargo-details">
+            <div class="container-full">
+                <div class="row c-c">
+                    <div class="ms-12 pcl-10 pc4k-9 pcs-11">
+                        <div class="details-header c-s">
+                            <h2 class="h2-page">Cargo details</h2>
+                            <div class="excel-load">
+                                <input type="file" name="" id="excel" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+                                <label for="excel" class="excel-load-label c-s">
+																	<div class="excel-load-icon c-c">	<i class="icon-file-excel"></i></div>
+																 Load from Excel</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="ms-4">
+                                <div class="custom-dropdown">
+                                    <div class="input-wrapper">
+                                        <label>
+										<span class="custom-label">Cargo type</span>
+										<div class="input-with-icons">
+									<input placeholder="Choose cargo type" class="dropdown-input" type="text" autocomplete="off" aria-required="true" aria-invalid="false">
+										<div class="icon-right c-c"><i class="icon-chevron-down"></i></div>
+										<div class="icon-left c-c"><i class="icon-box"></i></div>
+									</div>
+										</label>
+                                        <div class="dropdown-list">
+                                            <div class="dropdown-list-inner">
+                                                <div class="dropdown-list-el">
+                                                    Cargo type 1
+                                                </div>
+                                                <div class="dropdown-list-el">
+                                                    Cargo type 2
+                                                </div>
+                                                <div class="dropdown-list-el">
+                                                    Cargo type 3
+                                                </div>
+                                                <div class="dropdown-list-el">
+                                                    Cargo type 4
+                                                </div>
+                                                <div class="dropdown-list-el">
+                                                    Cargo type 5
+                                                </div>
+                                                <div class="dropdown-list-el">
+                                                    Cargo type 6
+                                                </div>
+                                                <div class="dropdown-list-el">
+                                                    Cargo type 7
                                                 </div>
 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="swap-points-outer">
-                                <button class="swap-points">
-													<div class="swap-points-icon c-c">
-													<i class="icon-arrow-long"></i>
-													<i class="icon-arrow-long"></i>
-												</div>
-												</button>
                             </div>
-                            <div id="point-to" class="point-peaker">
+                            <!-- drop-down-end -->
+                            <div class="col">
                                 <div class="input-wrapper">
                                     <label>
-									<span class="custom-label">Destination</span>
-									<input placeholder="Destination" type="text" class="form-input-large" autocomplete="off" aria-required="true" aria-invalid="false">
-									<div class="airpot-code"></div>
-									</label>
+				<span class="custom-label">Cargo weight (total)</span>
+			<input id="c-weight" placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false">
+				</label>
                                 </div>
                             </div>
 
-                            <div class="time-select-outer">
-                                <div class="time-select">
-                                    <div class="input-wrapper">
-                                        <input class="date-input-native" id="date" type="date" name="date" min="2020-09-05" max="2021-02-11">
-                                        <input class="date-input-fallback" id="alt" type="text" placeholder="Pick A Date">
-                                        <i class="icon-calendar"></i>
-                                        <div id="picker"></div>
+                            <div class="col">
+                                <div class="input-wrapper">
+                                    <label>
+			<span class="custom-label">Cargo volume</span>
+		<input id="c-volume" placeholder="м³" type="text" autocomplete="off" aria-required="true" aria-invalid="false">
+			</label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-wrapper">
+
+                                    <label for="packageNumber" class="custom-label">Package places</label>
+                                    <div class="input-number">
+                                        <button class="number-button input-number-add">+</button>
+                                        <input id="packageNumber" type="number" autocomplete="off" aria-required="true" aria-invalid="false" min="1" value="1">
+                                        <button class="number-button input-number-remove">-</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ms-12">
+                                <div class="packeges c-s">
+                                    <div class="toggle-wrapper">
+                                        <input class="tgl" id="package" type="checkbox">
+                                        <label class="tgl-btn" for="package">
+																<div class="tgl-label-text">Dimensions of each package:
+																</div>
+															</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="search-statistics c-s">
-                            <div class="stat-el">
-                                <div class="stat-el-total">256</div>
-                                <div class="stat-el-descr">Countries</div>
+
+                        <!-- packege-el -->
+                        <div class="packege-els">
+                            <div class="packege-els-outer">
+                                <div class="packege-el">
+                                    <div class="row">
+                                        <div class="ms-2">
+
+                                            <div class="input-wrapper input-s">
+
+                                                <label for="Item1" class="custom-label">Items</label>
+                                                <div class="input-number">
+                                                    <button class="number-button input-number-add">+</button>
+                                                    <input id="Item1" type="number" autocomplete="off" aria-required="true" aria-invalid="false" min="1" value="1">
+                                                    <button class="number-button input-number-remove">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-wrapper input-s">
+                                                <label>
+				<span class="custom-label">Item length</span>
+			<input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false">
+				</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="input-wrapper input-s">
+                                                <label>
+			<span class="custom-label">Item width</span>
+		<input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false">
+			</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="input-wrapper input-s">
+                                                <label>
+		<span class="custom-label">Item height</span>
+	<input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false">
+		</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-wrapper input-s">
+                                                <label>
+	<span class="custom-label">Item weight</span>
+<input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false">
+	</label>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="adv-packege-el">
+
+                                </div>
+                                <div class="add-packege-inner c-c">
+                                    <button class="add-packege c-c">
+																							<div class="c-c" data-tooltip="add packege" data-tooltip-location="top">	<i class="icon-plus"></i></div></button>
+                                </div>
                             </div>
-                            <div class="stat-el">
-                                <div class="stat-el-total">2453</div>
-                                <div class="stat-el-descr">Airports</div>
-                            </div>
-                            <div class="stat-el">
-                                <div class="stat-el-total">20+</div>
-                                <div class="stat-el-descr">Air carriers</div>
+
+
+                        </div>
+                        <div class="corgo-selected">
+                            <div class="row">
+                                <div class="ms-3">
+                                    <div class="selected-line">
+                                        <div class="label-text l-size">
+                                            Number of package places
+                                        </div>
+                                        <div class="strong-text xl-size">
+                                            <span class="total_package">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-2">
+                                    <div class="selected-line">
+                                        <div class="label-text l-size">
+                                            Cargo weight
+                                        </div>
+                                        <div class="strong-text xl-size">
+                                            <span class="total_weight">0</span>kg
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-2">
+                                    <div class="selected-line">
+                                        <div class="label-text l-size">
+                                            Cargo volume
+                                        </div>
+                                        <div class="strong-text xl-size">
+                                            <span class="total_volume">0</span> m³
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-2">
+                                    <div class="selected-line">
+                                        <div class="label-text l-size">
+                                            Cargo type
+                                        </div>
+                                        <div class="strong-text xl-size">
+                                            <span class="total_type">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <div class="selected-line">
+                                        <div class="label-text l-size">
+                                            Expected shipping date
+                                        </div>
+                                        <div class="strong-text xl-size">
+                                            <span class="total_date">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-12">
+                                    <button class="search-cargo ">
+																			<div class="c-c button-inner"><div class="search-cargo-img c-c"><img src="./img/plane.svg" alt=""></div> Get routes and fee</div></button>
+                                </div>
+
                             </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
-    </section>
+        </div>
+        </div>
 </body>
+<script src="./js/scroll-bar.js"></script>
 <script src="./js/picker.min.js"></script>
 <script src="./js/script.js"></script>
 

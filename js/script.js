@@ -66,7 +66,7 @@ for (var z = 0; z < backButton.length; z++) {
 
     var dayNamesShort = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
     var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var icon = '<svg viewBox="0 0 512 512"><polygon points="268.395,256 134.559,121.521 206.422,50 411.441,256 206.422,462 134.559,390.477 "/></svg>';
+    var icon = '<i class="icon-chevron-right"></i>';
 
     var root = document.getElementById('picker');
     var dateInput = document.getElementById('date');
@@ -125,3 +125,82 @@ for (var z = 0; z < backButton.length; z++) {
     });
 
 }());
+
+
+
+
+// animateValue('.preloader-counter', '.preloader-progress', 0, 100, 3000);
+var container = document.querySelector('.dropdown-list-inner');
+if (!container) {
+
+} else {
+    var ps = new PerfectScrollbar(container, {
+        wheelSpeed: 0.225,
+        wheelPropagation: false,
+        minScrollbarLength: 3,
+    });
+
+}
+document.querySelector('.custom-dropdown input').addEventListener('focus', function(e) {
+    console.log('focus')
+    e.preventDefault()
+    document.querySelector('.custom-dropdown').classList.add('active');
+
+})
+
+
+
+for (var z = 0; z < document.querySelectorAll('.dropdown-list-el').length; z++) {
+    var elem = document.querySelectorAll('.dropdown-list-el')[z];
+    elem.onclick = function() {
+        document.querySelector('.custom-dropdown input').value = this.textContent.replace(/(^\s*)|(\s*)$/g, '');
+        if (document.querySelector('.selected')) {
+            document.querySelector('.selected').classList.remove('selected')
+        }
+        this.classList.add('selected')
+        document.querySelector('.custom-dropdown').classList.remove('active')
+        document.querySelector('.custom-dropdown').classList.add('input-selected')
+    };
+}
+
+for (var z = 0; z < document.querySelectorAll('.input-number-add').length; z++) {
+    var elem = document.querySelectorAll('.input-number-add')[z];
+    elem.onclick = function() {
+        inputNumber = this.closest('.input-number').querySelector('input')
+        inputNumber.value = parseInt(inputNumber.value) + 1
+    };
+}
+
+for (var z = 0; z < document.querySelectorAll('.input-number-remove').length; z++) {
+    var elem = document.querySelectorAll('.input-number-remove')[z];
+    elem.onclick = function() {
+        inputNumber = this.closest('.input-number').querySelector('input');
+        if ((inputNumber.value) > inputNumber.getAttribute('min')) {
+            inputNumber.value = parseInt(inputNumber.value) - 1
+        }
+
+    };
+}
+document.querySelector('#package').addEventListener('input', function(e) {
+    if (this.checked == true) {
+        document.querySelector('.packege-els').style.maxHeight = document.querySelector('.packege-els-outer').scrollHeight + 'px';
+        document.querySelector('.packege-els-outer').classList.add('visible')
+        setTimeout(function() {
+            document.querySelector('.packege-els').style.maxHeight = 'inherit'
+        }, 200)
+    } else {
+        document.querySelector('.packege-els').style.maxHeight = document.querySelector('.packege-els-outer').scrollHeight + 'px';
+        document.querySelector('.packege-els-outer').classList.remove('visible');
+        setTimeout(function() {
+            document.querySelector('.packege-els').style.maxHeight = '0px'
+        }, 10)
+
+    }
+})
+
+
+
+document.querySelector('.add-packege').addEventListener('click', function(e) {
+    document.querySelector('.adv-packege-el').innerHTML += '<div class="packege-el packege-new"> <div class="packege-el-inner"> <div class="row"> <div class="ms-2"> <div class="input-wrapper input-s"> <label for="Item1" class="custom-label">Items</label> <div class="input-number"> <button class="number-button input-number-add">+</button> <input id="Item1" type="number" autocomplete="off" aria-required="true" aria-invalid="false" min="1" value="1"> <button class="number-button input-number-remove">-</button> </div> </div> </div> <div class="col"> <div class="input-wrapper input-s"> <label><span class="custom-label">Item length</span><input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false"></label> </div> </div> <div class="col"> <div class="input-wrapper input-s"> <label><span class="custom-label">Item width</span><input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false"></label> </div> </div> <div class="col"> <div class="input-wrapper input-s"> <label><span class="custom-label">Item height</span><input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false"></label> </div> </div> <div class="col"> <div class="input-wrapper input-s"> <label><span class="custom-label">Item weight</span><input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false"></label> </div> </div> </div> </div> </div>'
+
+})

@@ -122,90 +122,94 @@
     content: "\e918";
 }
 
-.icon-file-text:before {
+.icon-file-excel:before {
     content: "\e919";
 }
 
-.icon-filter:before {
+.icon-file-text:before {
     content: "\e91a";
 }
 
-.icon-airplane:before {
+.icon-filter:before {
     content: "\e91b";
 }
 
-.icon-globe:before {
+.icon-airplane:before {
     content: "\e91c";
 }
 
-.icon-group:before {
+.icon-globe:before {
     content: "\e91d";
 }
 
-.icon-language-icon-1:before {
+.icon-group:before {
     content: "\e91e";
 }
 
-.icon-log-out:before {
+.icon-language-icon-1:before {
     content: "\e91f";
 }
 
-.icon-mail:before {
+.icon-log-out:before {
     content: "\e920";
 }
 
-.icon-map-pin:before {
+.icon-mail:before {
     content: "\e921";
 }
 
-.icon-menu:before {
+.icon-map-pin:before {
     content: "\e922";
 }
 
-.icon-message-solid-outer:before {
+.icon-menu:before {
     content: "\e923";
 }
 
-.icon-minus:before {
+.icon-message-solid-outer:before {
     content: "\e924";
 }
 
-.icon-Module:before {
+.icon-minus:before {
     content: "\e925";
 }
 
-.icon-plus:before {
+.icon-Module:before {
     content: "\e926";
 }
 
-.icon-print:before {
+.icon-plus:before {
     content: "\e927";
 }
 
-.icon-refresh:before {
+.icon-print:before {
     content: "\e928";
 }
 
-.icon-save:before {
+.icon-refresh:before {
     content: "\e929";
 }
 
-.icon-send:before {
+.icon-save:before {
     content: "\e92a";
 }
 
-.icon-settings:before {
+.icon-send:before {
     content: "\e92b";
 }
 
-.icon-start-way:before {
+.icon-settings:before {
     content: "\e92c";
 }
 
-.icon-sucsess:before {
+.icon-start-way:before {
     content: "\e92d";
 }
 
-.icon-trash:before {
+.icon-sucsess:before {
     content: "\e92e";
+}
+
+.icon-trash:before {
+    content: "\e92f";
 }
