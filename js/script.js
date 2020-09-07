@@ -204,3 +204,27 @@ document.querySelector('.add-packege').addEventListener('click', function(e) {
     document.querySelector('.adv-packege-el').innerHTML += '<div class="packege-el packege-new"> <div class="packege-el-inner"> <div class="row"> <div class="ms-2"> <div class="input-wrapper input-s"> <label for="Item1" class="custom-label">Items</label> <div class="input-number"> <button class="number-button input-number-add">+</button> <input id="Item1" type="number" autocomplete="off" aria-required="true" aria-invalid="false" min="1" value="1"> <button class="number-button input-number-remove">-</button> </div> </div> </div> <div class="col"> <div class="input-wrapper input-s"> <label><span class="custom-label">Item length</span><input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false"></label> </div> </div> <div class="col"> <div class="input-wrapper input-s"> <label><span class="custom-label">Item width</span><input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false"></label> </div> </div> <div class="col"> <div class="input-wrapper input-s"> <label><span class="custom-label">Item height</span><input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false"></label> </div> </div> <div class="col"> <div class="input-wrapper input-s"> <label><span class="custom-label">Item weight</span><input placeholder="kg" type="text" autocomplete="off" aria-required="true" aria-invalid="false"></label> </div> </div> </div> </div> </div>'
 
 })
+
+
+document.querySelector('#theme').addEventListener('input', function(e) {
+    if (this.checked == true) {
+        // dark
+        document.documentElement.style.setProperty('--main-white', '#171B26');
+        document.documentElement.style.setProperty('--main-color-ligten', '#232838');
+        document.documentElement.style.setProperty('--main-text', '#ffffff');
+        document.documentElement.style.setProperty('--hover-gray', '#1d2135');
+        document.documentElement.style.setProperty('--icon-gray', '#5165A0');
+
+        document.documentElement.style.setProperty('--secondary-text', '#5A647C');
+        document.documentElement.style.setProperty('--line-stroke', '#232838');
+    } else {
+        document.documentElement.style.setProperty('--main-white', '#ffffff');
+        document.documentElement.style.setProperty('--main-color-ligten', '#D8EFFF');
+        document.documentElement.style.setProperty('--main-text', '#14171a');
+        document.documentElement.style.setProperty('--hover-gray', '#F5F6FA');
+        document.documentElement.style.setProperty('--icon-gray', '#8B92A0');
+
+        document.documentElement.style.setProperty('--secondary-text', '#657786');
+        document.documentElement.style.setProperty('--line-stroke', '#EDF1F4');
+    }
+})
