@@ -310,7 +310,6 @@ body {
     left: 0;
     z-index: 1;
     background: #adddff;
-    /* border: 0.15rem solid var(--icon-gray); */
     border-radius: 2.9rem;
     transition: var(--trainsition-fast) ease-in;
     transition-property: background;
@@ -332,10 +331,19 @@ input.tgl+.tgl-btn {
 }
 
 input.tgl+.tgl-btn:after {
-    border-radius: 50%;
+    border-radius: 1.5rem;
     background: var(--main-white);
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
+}
+
+input.tgl:active+.tgl-btn:after {
+    width: 2rem;
+}
+
+input.tgl:checked:active+.tgl-btn:after {
+    width: 2rem;
+    margin-left: -0.5rem;
 }
 
 input.tgl:checked+.tgl-btn::before {

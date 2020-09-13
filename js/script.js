@@ -129,7 +129,7 @@ for (var z = 0; z < backButton.length; z++) {
 
 
 
-// animateValue('.preloader-counter', '.preloader-progress', 0, 100, 3000);
+
 var container = document.querySelector('.dropdown-list-inner');
 if (!container) {
 
