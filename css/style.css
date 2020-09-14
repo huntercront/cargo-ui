@@ -426,6 +426,12 @@ input.tgl:checked+.tgl-btn::before {
 
 .point-peaker input {
     padding-left: 1.5rem;
+    padding-right: 4rem;
+}
+
+.point-peaker label,
+.time-select-outer label {
+    padding-bottom: 0rem;
 }
 
 .point-peaker .custom-label {
@@ -537,6 +543,21 @@ input.tgl:checked+.tgl-btn::before {
     color: var(--secondary-text);
     font-size: 0.9rem;
     font-weight: 400;
+}
+
+.airpot-code {
+    color: var(--secondary-text);
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    text-transform: uppercase;
+    padding-left: 0.5rem;
+    transform: translate(0, -50%);
+    border-left: 1px solid var(--line-stroke);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1;
+    user-select: none;
 }
 
 
